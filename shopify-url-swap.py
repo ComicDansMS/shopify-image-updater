@@ -9,8 +9,11 @@ image_folder_path = '/path/to/images'
 # URL of where the images are hosted (must have a trailing slash)
 new_url = "http://123.45.678.9/"
 
+# CSV filename
+csv_file = "products_export.csv"
+
 # Load the CSV file
-df = pd.read_csv('products_export.csv')
+df = pd.read_csv(csv_file)
 
 # Get the list of all image files in the folder
 image_files = os.listdir(image_folder_path)
