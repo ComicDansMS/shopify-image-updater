@@ -12,9 +12,7 @@ When the script runs, it will proceed to grab the updated images from the specif
 
 This script uses the following Python libraries:
 
-- `os` (Standard Library)
 - `pandas`
-- `urllib` (Standard Library)
 - `tqdm`
 
 You can install the necessary libraries using pip:
@@ -36,7 +34,7 @@ You can install the necessary libraries using pip:
 
 3. **CSV Preparation**:
     - Place your Shopify products export CSV in the main directory. 
-    - Ensure it's named 'products_export_1 (10).csv' or adjust the script to your filename.
+    - Update `csv_file` to the name of your csv.
 
 4. **Run**:
     - Execute the script with:
@@ -45,7 +43,4 @@ You can install the necessary libraries using pip:
       ```
 
 5. **Results**:
-    - An 'updated_shopify_products.csv' file will be generated in the main directory, with updated 'Image Src' and 'Variant Image' URLs.
-    - The console will provide feedback on the number of images replaced and variants updated.
-
-**Important**: Before executing the script, ensure your images are accessible via the provided `new_url`. If using a local HTTP server, ensure it's running.
+    - An 'updated_products_export.csv' file will be generated in the main directory, with updated 'Image Src' and 'Variant Image' URLs.
