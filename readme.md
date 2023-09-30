@@ -2,6 +2,12 @@
 
 This Python script allows you to automatically update product images in a Shopify CSV export. It requires your updated images to be hosted on a server or an HTTP server running locally.
 
+You can download all the product images from your store using [shopify-photo-download](https://github.com/ComicDansMS/shopify-photo-download). While processing/editing, ensure to keep the original file names.
+
+You can then use this script to update the export/import CSV with the URL where the images are available. This can be done with a reverse proxy (such as (ngrok)[https://ngrok.com]) pointing to a local HTTP server running on your machine. The `new_url` would be your ngrok URL.
+
+When the script runs, it will proceed to grab the updated images from the specified location.
+
 ## Dependencies
 
 This script uses the following Python libraries:
