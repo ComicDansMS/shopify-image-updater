@@ -10,7 +10,7 @@ When the script runs, it will proceed to grab the updated images from the specif
 
 ## Warning
 
-During the upload process, if Shopify determines there is an updated image on the product/variant, it will remove the existing image and try to fetch the new one. If the new image is not available at the URL, it will move onto the next image without reloading the existing image. It's an easy way to wipe a lot of product images from the store. It's not a bad idea to test this on a test product first to ensure the reverse proxy and HTTP server is working as expected.
+During the upload process, if Shopify determines there is an updated image on the product/variant, it will remove the existing image and try to fetch the new one. If the new image is not available at the URL, it will move onto the next image without reloading the existing image. It's an easy way to wipe a lot of product images from the store. If this happens, you can fix the underlying problem and re-upload the CSV and all will be fine. it's just something to be aware of.  It's not a bad idea to test this on a test product first to ensure the reverse proxy and HTTP server is working as expected.
 
 ## Dependencies
 
